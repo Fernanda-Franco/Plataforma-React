@@ -10,6 +10,7 @@ import { Root } from './pages/Root/Root';
 import { Section } from './components/Section/Section';
 import { EditaUsuario } from './pages/EditaUsuario/EditaUsuario';
 import { Perfil } from './pages/Perfil/Perfil';
+import { Pokemon } from './pages/Pokemon/Pokemon';
 
 const sections = [
   {
@@ -49,6 +50,9 @@ function App() {
             <Route path="/usuario/perfil/:id" element={<Perfil />} />
             <Route path="/login" element={<Login />} />
             <Route path="*" element={<NotFound />} />
+          
+          <Route path="/pokemon" element={<Pokemon />} />
+
           </Route>
         </Routes>
       </BrowserRouter>
